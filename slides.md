@@ -37,7 +37,8 @@ Thank you to EA:BCC and the Mellon Foundation!
 * Focus on international relations and U.S. Foreign Policy
 * http://history-lab.org
 ---
-# The History Lab & Emails
+# History Lab & Emails
 * Our PI, Matt Connelly, was a member of the task force that produced [The Future of Email Archives](https://www.clir.org/pubs/reports/pub175/) report.
-* Ben Lis is participating in the PDF email working group 
+* Ben Lis participates in the [EA-PDF Liaison Working Group (LWG)](https://pdfa.org/community/ea-pdf-lwg/)
+* [Processed & Analyzed](http://history-lab.org/clinton) the Hillary Clinton's email
 
