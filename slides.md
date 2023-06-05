@@ -41,4 +41,15 @@ Thank you to EA:BCC and the Mellon Foundation!
 * Our PI, Matt Connelly, was a member of the task force that produced [The Future of Email Archives](https://www.clir.org/pubs/reports/pub175/) report.
 * Ben Lis participates in the [EA-PDF Liaison Working Group (LWG)](https://pdfa.org/community/ea-pdf-lwg/)
 * [Processed & Analyzed](http://history-lab.org/clinton) the Hillary Clinton's email
-
+---
+# FOIA 
+* Freedom of Information Act
+* Federal law requiring full or partial disclosure of U.S. Gov't documents
+* Sunshine laws: state & local equivalents
+* FOIAed, FOIAing: verb describing process
+---
+# Collection Building with FOIAed Docs
+* Excellent example: [Documenting COVID-19](documentingcovid19.io)
+* Started by Derek Kravitz at the Brown Institute for Media Innovation
+* Local, state and federal COVID-19 related documents including well over 35K emails
+* Award-winning: 2022 National Headliners Award, 2021 Sunshine Award, 2020 Free Speech & Open Government Award  
