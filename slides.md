@@ -46,10 +46,34 @@ Thank you to EA:BCC and the Mellon Foundation!
 * Freedom of Information Act
 * Federal law requiring full or partial disclosure of U.S. Gov't documents
 * Sunshine laws: state & local equivalents
-* FOIAed, FOIAing: verb describing process
+* FOIAed, FOIAing: verb describing process of requesting documents
 ---
 # Collection Building with FOIAed Docs
 * Excellent example: [Documenting COVID-19](documentingcovid19.io)
 * Started by Derek Kravitz at the Brown Institute for Media Innovation
 * Local, state and federal COVID-19 related documents including well over 35K emails
 * Award-winning: 2022 National Headliners Award, 2021 Sunshine Award, 2020 Free Speech & Open Government Award  
+---
+# Email Formats for Archives
+|Emails|NARA|LOC|
+|----|---------|----------|
+|Aggregated|**PST, MBOX**|PST, MBOX, PDF
+|Individual|**EML, MBOX**, MSG, XML|EML, MSG, PDF|
+
+* Preferred formats are bolded
+* Email archiving systems generally support MBOX and/or IMAP  
+* Sources: [NARA](https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html#email2), [LOC](https://www.loc.gov/preservation/resources/rfs/email.html)
+
+---
+# PDF/email
+* PDF has shortcomings as an email archiving format
+  * Not addressed by PDF/A 
+* A group is working to eliminated these shortcoming   
+* Known originally as EA-PDF, now called PDF/mail
+* Long term goal: PDF/M ISO standard 
+* Check out Mike and Chris's [talk](https://emailarchivesgrant.library.illinois.edu/timetable/event/project-briefing-11/) tomorrow at 11:00 
+---
+# FOIAed Email Formats
+* Predominant: PDF
+* Occassionally: PST, MBOX
+* Typical Example: (Fauci Emails)[]
