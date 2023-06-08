@@ -1,27 +1,28 @@
 ---
 marp: true
-theme: gaia
-class:
-  - invert
+theme: default
 paginate: true
 ---
 <!-- _class: lead -->
-**Creating Email Archives from PDFS - The COVID-19 Corpus**
+## **Creating Email Archives from PDFs - The COVID-19 Corpus**
 EA:BCC Email Archiving Symposium
+Ben Lis - History Lab, Columbia University
 June 14th, 2023
 
 ---
+## Creating Email Archives from PDFs -The COVID-19 Corpus Abstract
+
+> This awardee project briefing provides an overview of the efforts to build a Python library that extracts individual email metadata and text from PDFs. We will also report our experiences using it to enhance a corpus of FOIAed documents, some thousands of pages long, regarding the response of public officials, mostly state and local, from the early days of the COVID-19 pandemic.
+---
 <!-- _class: lead -->
-**This is an awardee presentation**
-Thank you to EA:BCC and the Mellon Foundation!
+
+# Thank you to EA:BCC and the Mellon Foundation!
 
 ---
-# About Me
-* Ben Lis 
-* Data Engineer at the History Lab @ Columbia University
-* Not an archivist
-* Not a historian
-* I do develop tools and infrastructure for historians and archivists
+# Disclaimer
+* I'm **not** an archivist
+* I'm **not** a historian
+* But I do develop tools and infrastructure for historians and archivists
 ---
 # Agenda
 1. Background
@@ -68,12 +69,12 @@ Thank you to EA:BCC and the Mellon Foundation!
 # PDF/email
 * PDF has shortcomings as an email archiving format
   * Not addressed by PDF/A 
-* A group is working to eliminated these shortcoming   
+* A group is working to eliminated these shortcomings   
 * Known originally as EA-PDF, now called PDF/mail
 * Long term goal: PDF/M ISO standard 
 * Check out Mike and Chris's [talk](https://emailarchivesgrant.library.illinois.edu/timetable/event/project-briefing-11/) tomorrow at 11:00 
 ---
 # FOIAed Email Formats
 * Predominant: PDF
-* Occassionally: PST, MBOX
+* Occassional: PST, MBOX
 * Typical Example: (Fauci Emails)[]
