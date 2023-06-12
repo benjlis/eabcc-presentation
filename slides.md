@@ -22,7 +22,7 @@ June 14th, 2023
 # Disclaimer
 * I'm **not** an archivist
 * I'm **not** a historian
-* But I do develop tools and infrastructure for historians and archivists
+* But I do develop software tools and infrastructure for historians and archivists
 ---
 # Agenda
 1. Background
@@ -30,6 +30,12 @@ June 14th, 2023
 3. Subsequent & Future Work
 4. Questions & Discussions 
 ---
+<!-- _class: lead -->
+
+# 1. Background
+
+---
+
 # The History Lab
 * History as Data Science
 * We turn documents into data and develop tools to explore history
@@ -49,11 +55,21 @@ June 14th, 2023
 * Sunshine laws: state & local equivalents
 * FOIAed, FOIAing: verb describing process of requesting documents
 ---
+# LBJ on FOIA
+
+> A democracy works best when the people have all the information that the security of the Nation permits. No one should be able to pull curtains of secrecy around decisions which can be revealed without injury to the public interest.
+
+* h/t [Daniel DeFraia](https://daniel-defraia.squarespace.com/) 
+---
 # Collection Building with FOIAed Docs
 * Excellent example: [Documenting COVID-19](documentingcovid19.io)
 * Started by Derek Kravitz at the Brown Institute for Media Innovation
 * Local, state and federal COVID-19 related documents including well over 35K emails
 * Award-winning: 2022 National Headliners Award, 2021 Sunshine Award, 2020 Free Speech & Open Government Award  
+---
+# Challenges of FOIAed Document Collections
+1. Long-term preservation
+2. Document processing <-- This talk focus is on this
 ---
 # Email Formats for Archives
 |Emails|NARA|LOC|
@@ -62,19 +78,19 @@ June 14th, 2023
 |Individual|**EML, MBOX**, MSG, XML|EML, MSG, PDF|
 
 * Preferred formats are bolded
-* Email archiving systems generally support MBOX and/or IMAP  
 * Sources: [NARA](https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html#email2), [LOC](https://www.loc.gov/preservation/resources/rfs/email.html)
 
----
-# PDF/email
-* PDF has shortcomings as an email archiving format
-  * Not addressed by PDF/A 
-* A group is working to eliminated these shortcomings   
-* Known originally as EA-PDF, now called PDF/mail
-* Long term goal: PDF/M ISO standard 
-* Check out Mike and Chris's [talk](https://emailarchivesgrant.library.illinois.edu/timetable/event/project-briefing-11/) tomorrow at 11:00 
 ---
 # FOIAed Email Formats
 * Predominant: PDF
 * Occassional: PST, MBOX
 * Typical Example: (Fauci Emails)[]
+---
+# PDF/email
+* PDF has shortcomings as an email archiving format
+  * Not addressed by PDF/A 
+* A group is working to eliminate these shortcomings   
+* Known originally as EA-PDF, now called PDF/mail
+* Long term goal: PDF/M ISO standard 
+* Check out Mike and Chris's [talk](https://emailarchivesgrant.library.illinois.edu/timetable/event/project-briefing-11/) tomorrow at 11:00 
+---
