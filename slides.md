@@ -32,7 +32,7 @@ June 14th, 2023
 ---
 <!-- _class: lead -->
 
-# 1. Background
+# Background
 
 ---
 
@@ -63,7 +63,7 @@ June 14th, 2023
 ---
 # Collection Building with FOIAed Docs
 * Excellent example: [Documenting COVID-19](https://documentingcovid19.io)
-* Started by Derek Kravitz at the Brown Institute for Media Innovation
+* Created by Derek Kravitz at the Brown Institute for Media Innovation
 * Local, state and federal COVID-19 related documents including well over 35K emails
 * Award-winning: 2022 National Headliners Award, 2021 Sunshine Award, 2020 Free Speech & Open Government Award  
 ---
@@ -84,19 +84,23 @@ June 14th, 2023
 # FOIAed Email Formats
 * Predominant: PDF
 * Occassional: PST, MBOX
-* Typical Example: (Fauci Emails)[]
 ---
 # PDF/email
 * PDF has shortcomings as an email archiving format
   * Not addressed by PDF/A 
-* A group is working to eliminate these shortcomings   
+* A group of archivists and PDF experts are working to eliminate these shortcomings   
 * Known originally as EA-PDF, now called PDF/mail
 * Long term goal: PDF/M ISO standard 
-* Check out Mike and Chris's [talk](https://emailarchivesgrant.library.illinois.edu/timetable/event/project-briefing-11/) tomorrow at 11:00 
+* Check out Mike and Chris's [talk](https://emailarchivesgrant.library.illinois.edu/timetable/event/project-briefing-11/) Thursday at 11:00 CDT 
+---
+# FOIAed email example
 ---
 <!-- _class: lead -->
 
-# 2. Software we built with the grant
+# Software we built with the grant
+
+---
+# the basic idea
 
 ---
 # pdf2mbox
@@ -104,8 +108,7 @@ June 14th, 2023
 
 * command-line utility and Python library
 * input: PDF containing emails
-* output: mbox and/or csv file
-* available on [PyPI](https://pypi.org/project/pdf2mbox/)
+* output: mbox and/or csv file containing emails
 ---
 # installation
 * open-source, distributed under the MIT License
@@ -123,12 +126,49 @@ pip install pdf2mbox
 
 
 ---
-<!-- _class: lead -->
-
-# 3. Subsequent & Future Work
+# current limitations
+* Assumes an email ends when a new email begins
+* Works best with a standard email header (i.e., From:, To:, Sent:, Subject:)
 
 ---
 <!-- _class: lead -->
 
-# 4. Questions & Discussions
+# Subsequent & Future Work
+
+---
+# PII: Personally Identifiable Information
+Examples:
+* Email address 
+* Phone numbers
+* SSN 
+* Credit Card # 
+* Home Address 
+* Names of non-public figures
+---
+# PII Detection & Redaction
+* FOIAed documents may contain unredacted PII
+* We're using open source libraries to detect and redact PII:
+   * detect:
+   * redact:
+* Tend to work well on the more basic elements
+* We'll continue to look to improve
+
+---
+# Expanding the collection of COVID-19 Documents
+* Collaboration between Muckrock & History Lab
+* Actively seeking document submissions - [find out more](https://www.muckrock.com/news/archives/2023/may/10/covid-archive-history-lab/)
+* Made possible in part by a grant from the NHPRC
+---
+# Something I'd like to work on
+* Applying generative AI to email parsing and document splitting
+
+---
+<!-- _class: lead -->
+
+# Questions & Discussion
+
+---
+<!-- _class: lead -->
+
+# Thanks!
 
