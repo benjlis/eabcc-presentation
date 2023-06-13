@@ -62,14 +62,14 @@ June 14th, 2023
 * h/t [Daniel DeFraia](https://daniel-defraia.squarespace.com/) 
 ---
 # Collection Building with FOIAed Docs
-* Excellent example: [Documenting COVID-19](documentingcovid19.io)
+* Excellent example: [Documenting COVID-19](https://documentingcovid19.io)
 * Started by Derek Kravitz at the Brown Institute for Media Innovation
 * Local, state and federal COVID-19 related documents including well over 35K emails
 * Award-winning: 2022 National Headliners Award, 2021 Sunshine Award, 2020 Free Speech & Open Government Award  
 ---
 # Challenges of FOIAed Document Collections
 1. Long-term preservation
-2. Document processing <-- This talk focus is on this
+2. Document processing <-- This talk focuses on this
 ---
 # Email Formats for Archives
 |Emails|NARA|LOC|
@@ -96,7 +96,31 @@ June 14th, 2023
 ---
 <!-- _class: lead -->
 
-# 2. Software we produced
+# 2. Software we built with the grant
+
+---
+# pdf2mbox
+![](https://history-lab.github.io/pdf2mbox/pdf2mbox_diagram.png)
+
+* command-line utility and Python library
+* input: PDF containing emails
+* output: mbox and/or csv file
+* available on [PyPI](https://pypi.org/project/pdf2mbox/)
+---
+# installation
+* open-source, distributed under the MIT License
+* requires Python 3.8 or higher
+* available on [PyPI](https://pypi.org/project/pdf2mbox/)
+* simple install, from you Python environment:
+```
+pip install pdf2mbox
+```
+---
+# command-line usage
+
+---
+# how it works
+
 
 ---
 <!-- _class: lead -->
