@@ -19,6 +19,9 @@ June 14th, 2023
 # Thank you to EA:BCC and the Mellon Foundation!
 
 ---
+# Slides - https://github.com/benjlis/eabcc-presentation
+
+---
 # Disclaimer
 * I'm **not** an archivist
 * I'm **not** a historian
