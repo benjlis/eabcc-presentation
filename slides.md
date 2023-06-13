@@ -151,19 +151,22 @@ Examples:
 # PII Detection & Redaction
 * FOIAed documents may contain unredacted PII
 * We're using open source libraries to detect and redact PII:
-   * detect:
-   * redact:
-* Tend to work well on the more basic elements
+   * detect: 
+      * [CapOne DataProfiler](https://github.com/capitalone/DataProfiler),
+      * [CommonRegex Improved (crim)](https://github.com/brootware/commonregex-improved)
+   * redact: [PyMuPDF](https://github.com/pymupdf/PyMuPDF)
+* Tend to work pretty well on the more basic elements
 * We'll continue to look to improve
 
 ---
-# Expanding the collection of COVID-19 Documents
+# We're expanding the COVID-19 Corpus!
 * Collaboration between Muckrock & History Lab
 * Actively seeking document submissions - [find out more](https://www.muckrock.com/news/archives/2023/may/10/covid-archive-history-lab/)
-* Made possible in part by a grant from the NHPRC
+* Made possible in part by a grant from the [National Historical Publications & Record Commission - NHPRC)](https://www.archives.gov/nhprc)
 ---
-# Something I'd like to work on
+# What I'd like to work on that is not yet scheduled
 * Applying generative AI to email parsing and document splitting
+* Evaluate [Microsoft Presidio](https://microsoft.github.io/presidio/) for PII detection
 
 ---
 <!-- _class: lead -->
