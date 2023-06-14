@@ -151,9 +151,6 @@ Supports:
 ---
 # Command-line options
 ```
-    python pdf2mbox.py [-h] [--version] [--overwrite] [--csv [CSV]]
-                       pdf_file [mbox_file]
-
     positional arguments:
       pdf_file         PDF file provided as input
       mbox_file        MBOX file generated as output
