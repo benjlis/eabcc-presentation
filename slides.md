@@ -116,10 +116,10 @@ June 14th, 2023
 
 ---
 ## Until we have something like PDF/mail:
-It will be preferable for archivists to process email using MBOX, PST, or IMAP because structure and information is lost on export to PDF.
+It will be preferable for archivists to process email using MBOX, PST, or IMAP because structure and information are lost on export to PDF.
 
 ## Our hypothesis: 
-If the above options are not available, there is often enough information in an email PDF to create a proxy of the original that is good enough for processing.
+If the above options are unavailable, there is often enough information in an email PDF to create a proxy of the original that is good enough for processing.
 
 ---
 # pdf2mbox
@@ -135,7 +135,7 @@ If the above options are not available, there is often enough information in an 
   * [GitHub repository](https://github.com/history-lab/pdf2mbox)
 * requires Python 3.8 or higher
 * available on [PyPI](https://pypi.org/project/pdf2mbox/)
-* simple install from you Python environment:
+* simple install from your Python environment:
 ```
 pip install pdf2mbox
 ```
