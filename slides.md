@@ -141,7 +141,13 @@ pip install pdf2mbox
 ```
 ---
 # Command-line usage
-
+```
+python -m pdf2mbox email.pdf out.mbox
+```
+Supports:
+* individual email, single PDF
+* aggregated emails, single PDF
+* multiple PDFs
 ---
 # Command-line options
 ```
