@@ -49,7 +49,7 @@ June 14th, 2023
 * http://history-lab.org
 ---
 # History Lab & Emails
-* Our PI, Matt Connelly, was a member of the task force that produced [The Future of Email Archives](https://www.clir.org/pubs/reports/pub175/) report.
+* Our PI, Matt Connelly, was on the task force that produced [The Future of Email Archives](https://www.clir.org/pubs/reports/pub175/) report.
 * Ben Lis participates in the [EA-PDF Liaison Working Group (LWG)](https://pdfa.org/community/ea-pdf-lwg/)
 * [Processed & Analyzed](http://history-lab.org/clinton) the Hillary Clinton's email
 ---
@@ -57,7 +57,7 @@ June 14th, 2023
 * Freedom of Information Act
 * Federal law requiring full or partial disclosure of U.S. Gov't documents
 * Sunshine laws: state & local equivalents
-* FOIAed, FOIAing: verb describing process of requesting documents
+* FOIAed, FOIAing: describes the process of requesting government documents
 ---
 # LBJ on FOIA
 
@@ -68,7 +68,7 @@ June 14th, 2023
 # Collection Building with FOIAed Docs
 * Excellent example: [Documenting COVID-19](https://documentingcovid19.io)
 * Created by Derek Kravitz at the Brown Institute for Media Innovation
-* Local, state and federal COVID-19 related documents including well over 35K emails
+* Local, state, and federal COVID-19 related documents, including well over 35K emails
 * Award-winning: 2022 National Headliners Award, 2021 Sunshine Award, 2020 Free Speech & Open Government Award  
 ---
 # Challenges of FOIAed Document Collections
@@ -87,9 +87,9 @@ June 14th, 2023
 ---
 # FOIAed Email Formats
 * Predominant: PDF
-* Occassional: PST, MBOX
+* Occasional: PST, MBOX
 ---
-# PDF FOIAed Email example
+# PDF FOIAed Email Example
 * Anthony Fauci's Email
 * NIH FOIA by Jason Leopold
 * Available on MuckRock's DocumentCloud
@@ -100,14 +100,14 @@ June 14th, 2023
   * access to attachments
   * structure
   * easy access to metadata
-  * content if scanned
+  * content, if scanned
 * Not apt to be in PDF/A
 
 ---
 # PDF/email
 * A group of archivists and PDF experts are developing a PDF standard that eliminates many of these shortcomings   
 * Known originally as EA-PDF, now called PDF/mail
-* Long term goal: PDF/M ISO standard 
+* Long-term goal: PDF/M ISO standard 
 * Check out Mike and Chris's [talk](https://emailarchivesgrant.library.illinois.edu/timetable/event/project-briefing-11/) Thursday at 11:00 CDT 
 ---
 <!-- _class: lead -->
@@ -116,10 +116,10 @@ June 14th, 2023
 
 ---
 ## Basic fact:
-As information is lost when emails are exported to PDF, it is always preferable to process email via MBOX, PST or IMAP. 
+As information is lost when emails are exported to PDF, it is always preferable to process email via MBOX, PST, or IMAP. 
 
 ## Our hypothesis: 
-In the absence of such access, there is often enough information in an email PDF to create a proxy of the original emails acceptable for use in an email archive.
+If no such access is available, there is often enough information in an email PDF to create a proxy of the original emails acceptable for use in an email archive.
 
 ---
 # pdf2mbox
@@ -127,13 +127,13 @@ In the absence of such access, there is often enough information in an email PDF
 
 * command-line utility and Python library
 * input: PDF containing emails
-* output: mbox and/or csv file containing emails
+* output: MBOX or CSV file containing emails
 ---
 # Installation
 * open-source, distributed under the MIT License
 * requires Python 3.8 or higher
 * available on [PyPI](https://pypi.org/project/pdf2mbox/)
-* simple install, from you Python environment:
+* simple install from you Python environment:
 ```
 pip install pdf2mbox
 ```
@@ -185,9 +185,9 @@ Subject: Have you seen my picnic basket?
 ---
 # Using it to build a corpus
 1. Run pdf2mbox on the PDF emails to extract email metadata and text
-2. Database the metadata and text (in our case using PostgreSQL with full text search)
+2. Database the metadata and text (in our case, using PostgreSQL with full-text search)
 3. Improve the discoverability by performing NER and topic modeling. 
-4. Build a simple GUI (in our case using Streamlit)
+4. Build a simple GUI (in our case, using Streamlit)
 
 Check it out: [COVID-19 Archive Prototype](https://covid19-prototype.history-lab.org/)
 
@@ -215,7 +215,7 @@ Examples:
 ---
 # PII Detection & Redaction
 * FOIAed documents may contain unredacted PII
-* We're using open source libraries to detect and redact PII:
+* We're using open-source libraries to detect and redact PII:
    * detect: 
       * [CapOne DataProfiler](https://github.com/capitalone/DataProfiler),
       * [CommonRegex Improved (crim)](https://github.com/brootware/commonregex-improved)
