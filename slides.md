@@ -29,8 +29,8 @@ June 14th, 2023
 ---
 # Agenda
 1. Background
-2. Software Products
-3. Subsequent & Future Work
+2. Software we built
+3. Follow-on work
 4. Questions & Discussions 
 ---
 <!-- _class: lead -->
@@ -45,6 +45,7 @@ June 14th, 2023
 * Home to the FOIArchive 
   * the world's largest database of declassified documents
 * Focus on international relations and U.S. Foreign Policy
+* New area of research: History of COVID-19 
 * http://history-lab.org
 ---
 # History Lab & Emails
@@ -72,7 +73,7 @@ June 14th, 2023
 ---
 # Challenges of FOIAed Document Collections
 1. Long-term preservation
-2. Document processing <-- This talk focuses on this
+2. Document processing &larr; This talk's focus 
 ---
 # Email Formats for Archives
 |Emails|NARA|LOC|
@@ -136,7 +137,7 @@ pip install pdf2mbox
 ---
 <!-- _class: lead -->
 
-# Subsequent & Future Work
+# Follow-on Work
 
 ---
 # PII: Personally Identifiable Information
@@ -162,6 +163,7 @@ Examples:
 # We're expanding the COVID-19 Corpus!
 * Collaboration between Muckrock & History Lab
 * Actively seeking document submissions - [find out more](https://www.muckrock.com/news/archives/2023/may/10/covid-archive-history-lab/)
+* Other document types - not just emails
 * Made possible in part by a grant from the [National Historical Publications & Record Commission - NHPRC)](https://www.archives.gov/nhprc)
 ---
 # What I'd like to work on that is not yet scheduled
