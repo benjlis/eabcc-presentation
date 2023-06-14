@@ -89,15 +89,26 @@ June 14th, 2023
 * Predominant: PDF
 * Occassional: PST, MBOX
 ---
+# PDF FOIAed Email example
+* Anthony Fauci's Email
+* NIH FOIA by Jason Leopold
+* Available on MuckRock's DocumentCloud
+* https://www.documentcloud.org/documents/20793561-leopold-nih-foia-anthony-fauci-emails
+---
+# PDF Email challenges
+* Loss of 
+  * access to attachments
+  * structure
+  * easy access to metadata
+  * content if scanned
+* Not apt to be in PDF/A
+
+---
 # PDF/email
-* PDF has shortcomings as an email archiving format
-  * Not addressed by PDF/A 
-* A group of archivists and PDF experts are working to eliminate these shortcomings   
+* A group of archivists and PDF experts are developing a PDF standard that eliminates many of these shortcomings   
 * Known originally as EA-PDF, now called PDF/mail
 * Long term goal: PDF/M ISO standard 
 * Check out Mike and Chris's [talk](https://emailarchivesgrant.library.illinois.edu/timetable/event/project-briefing-11/) Thursday at 11:00 CDT 
----
-# FOIAed email example
 ---
 <!-- _class: lead -->
 
