@@ -51,7 +51,7 @@ June 14th, 2023
 # History Lab & Emails
 * Our PI, Matt Connelly, was on the task force that produced [The Future of Email Archives](https://www.clir.org/pubs/reports/pub175/) report.
 * Ben Lis participates in the [EA-PDF Liaison Working Group (LWG)](https://pdfa.org/community/ea-pdf-lwg/)
-* [Processed & Analyzed](http://history-lab.org/clinton) the Hillary Clinton's email
+* [Processed & Analyzed](http://history-lab.org/clinton) Hillary Clinton's email
 ---
 # FOIA 
 * Freedom of Information Act
@@ -115,11 +115,11 @@ June 14th, 2023
 # Software we built with the grant
 
 ---
-## Basic fact:
-As information is lost when emails are exported to PDF, it is always preferable to process email via MBOX, PST, or IMAP. 
+## Until we have something like PDF/mail:
+It will be preferable for archivists to process email using MBOX, PST, or IMAP because structure and information is lost on export to PDF.
 
 ## Our hypothesis: 
-If no such access is available, there is often enough information in an email PDF to create a proxy of the original emails acceptable for use in an email archive.
+If the above options are not available, there is often enough information in an email PDF to create a proxy of the original that is good enough for processing.
 
 ---
 # pdf2mbox
@@ -127,10 +127,12 @@ If no such access is available, there is often enough information in an email PD
 
 * command-line utility and Python library
 * input: PDF containing emails
+* process: Parses PDF to recreate email structure (metadata & text)
 * output: MBOX or CSV file containing emails
 ---
 # Installation
 * open-source, distributed under the MIT License
+  * [GitHub repository](https://github.com/history-lab/pdf2mbox)
 * requires Python 3.8 or higher
 * available on [PyPI](https://pypi.org/project/pdf2mbox/)
 * simple install from you Python environment:
@@ -139,16 +141,16 @@ pip install pdf2mbox
 ```
 ---
 # Command-line usage
-```
-    % python -m pdf2mbox --help
-    usage: pdf2mbox.py [-h] [--version] [--overwrite] [--csv [CSV]]
-                       pdf_file [mbox_file]
 
-    Generates an mbox from a PDF containing emails
+---
+# Command-line options
+```
+    python pdf2mbox.py [-h] [--version] [--overwrite] [--csv [CSV]]
+                       pdf_file [mbox_file]
 
     positional arguments:
       pdf_file         PDF file provided as input
-      mbox_file        Mbox file generated as output
+      mbox_file        MBOX file generated as output
 
     optional arguments:
       -h, --help       show this help message and exit
@@ -170,7 +172,6 @@ pip install pdf2mbox
 
 ---
 # Caveats
-* Assumes an email ends when a new email begins
 * Works best with a more standard email header 
 ```
 From:    Yogi Bear
@@ -179,8 +180,8 @@ To:      Boo Boo Bear
 Cc:      Ranger
 Subject: Have you seen my picnic basket?
 ```
+* Assumes an email ends where a new email begins
 * If you encounter errors installing pdf2mbox, please check the OS-level dependencies of both the [pdftotext](https://pypi.org/project/pdftotext/) and [python-magic](https://pypi.org/project/python-magic/) packages to ensure you have the required libraries installed, as pdf2mbox utilizes both these packages.
-
 
 ---
 # Using it to build a corpus
@@ -198,7 +199,7 @@ Check it out: [COVID-19 Archive Prototype](https://covid19-prototype.history-lab
 
 ---
 # We're expanding the COVID-19 Corpus!
-* Collaboration between Muckrock & History Lab
+* Collaboration between MuckRock & History Lab
 * Actively seeking document submissions - [find out more](https://www.muckrock.com/news/archives/2023/may/10/covid-archive-history-lab/)
 * Other document types included, not just emails
 * Made possible in part by a grant from the [National Historical Publications & Record Commission - NHPRC)](https://www.archives.gov/nhprc)
