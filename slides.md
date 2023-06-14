@@ -115,7 +115,11 @@ June 14th, 2023
 # Software we built with the grant
 
 ---
-# the basic idea
+## Basic fact:
+As information is lost when emails are exported to PDF, it is always preferable to process email via MBOX, PST or IMAP. 
+
+## Our hypothesis: 
+In the absence of such access, there is often enough information in an email PDF to create a proxy of the original emails acceptable for use in an email archive.
 
 ---
 # pdf2mbox
@@ -125,7 +129,7 @@ June 14th, 2023
 * input: PDF containing emails
 * output: mbox and/or csv file containing emails
 ---
-# installation
+# Installation
 * open-source, distributed under the MIT License
 * requires Python 3.8 or higher
 * available on [PyPI](https://pypi.org/project/pdf2mbox/)
@@ -134,21 +138,70 @@ June 14th, 2023
 pip install pdf2mbox
 ```
 ---
-# command-line usage
+# Command-line usage
+```
+    % python -m pdf2mbox --help
+    usage: pdf2mbox.py [-h] [--version] [--overwrite] [--csv [CSV]]
+                       pdf_file [mbox_file]
+
+    Generates an mbox from a PDF containing emails
+
+    positional arguments:
+      pdf_file         PDF file provided as input
+      mbox_file        Mbox file generated as output
+
+    optional arguments:
+      -h, --help       show this help message and exit
+      --version, -v    show program's version number and exit
+      --overwrite, -o  overwrite MBOX file if it exists
+      --csv [CSV]      generate CSV file output
+```
+---
+# Python usage
+```
+    # from within python
+    from pdf2mbox import pdf2mbox
+    pe = pdf2mbox(pdf_file, mbox_file) # pe contains dict of emails
+```
+---
+# How it works
+
+
 
 ---
-# how it works
-
-
----
-# current limitations
+# Caveats
 * Assumes an email ends when a new email begins
-* Works best with a standard email header (i.e., From:, To:, Sent:, Subject:)
+* Works best with a more standard email header 
+```
+From:    Yogi Bear
+Sent:    Wed, 14 Jun 2023 15:00:00
+To:      Boo Boo Bear
+Cc:      Ranger
+Subject: Have you seen my picnic basket?
+```
+* If you encounter errors installing pdf2mbox, please check the OS-level dependencies of both the [pdftotext](https://pypi.org/project/pdftotext/) and [python-magic](https://pypi.org/project/python-magic/) packages to ensure you have the required libraries installed, as pdf2mbox utilizes both these packages.
+
+
+---
+# Using it to build a corpus
+1. Run pdf2mbox on the PDF emails to extract email metadata and text
+2. Database the metadata and text (in our case using PostgreSQL with full text search)
+3. Improve the discoverability by performing NER and topic modeling. 
+4. Build a simple GUI (in our case using Streamlit)
+
+Check it out: [COVID-19 Archive Prototype](https://covid19-prototype.history-lab.org/)
 
 ---
 <!-- _class: lead -->
 
 # Follow-on Work
+
+---
+# We're expanding the COVID-19 Corpus!
+* Collaboration between Muckrock & History Lab
+* Actively seeking document submissions - [find out more](https://www.muckrock.com/news/archives/2023/may/10/covid-archive-history-lab/)
+* Other document types included, not just emails
+* Made possible in part by a grant from the [National Historical Publications & Record Commission - NHPRC)](https://www.archives.gov/nhprc)
 
 ---
 # PII: Personally Identifiable Information
@@ -171,12 +224,7 @@ Examples:
 * We'll continue to look to improve
 
 ---
-# We're expanding the COVID-19 Corpus!
-* Collaboration between Muckrock & History Lab
-* Actively seeking document submissions - [find out more](https://www.muckrock.com/news/archives/2023/may/10/covid-archive-history-lab/)
-* Other document types - not just emails
-* Made possible in part by a grant from the [National Historical Publications & Record Commission - NHPRC)](https://www.archives.gov/nhprc)
----
+
 # What I'd like to work on that is not yet scheduled
 * Applying generative AI to email parsing and document splitting
 * Evaluate [Microsoft Presidio](https://microsoft.github.io/presidio/) for PII detection
