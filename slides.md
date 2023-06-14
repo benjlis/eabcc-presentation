@@ -90,7 +90,7 @@ June 14th, 2023
 * Occasional: PST, MBOX
 ---
 # PDF FOIAed Email Example
-* Anthony Fauci's Email
+* Anthony Fauci's Emails
 * NIH FOIA by Jason Leopold
 * Available on MuckRock's DocumentCloud
 * https://www.documentcloud.org/documents/20793561-leopold-nih-foia-anthony-fauci-emails
@@ -167,14 +167,20 @@ Supports:
 ---
 # Python usage
 ```
-    # from within python
     from pdf2mbox import pdf2mbox
+   
     pe = pdf2mbox(pdf_file, mbox_file) # pe contains dict of emails
 ```
+The email parser we developed for the project, xmpdf, is available standalone:
+   * [GitHub repo](https://github.com/history-lab/xmpdf)
+   * [PyPI](https://pypi.org/project/xmpdf/)
 ---
 # How it works
-
-
+![](pdf2mbox-processing-flow.png)
+* rules-based parser
+* single pass 
+* only uses text
+* email = header + body
 
 ---
 # Caveats
@@ -193,7 +199,9 @@ Subject: Have you seen my picnic basket?
 # Using it to build a corpus
 1. Run pdf2mbox on the PDF emails to extract email metadata and text
 2. Database the metadata and text (in our case, using PostgreSQL with full-text search)
-3. Improve the discoverability by performing NER and topic modeling. 
+3. Improve the discoverability by applying natural language processing (NLP)
+    * NER - named entity recognition
+    * Topic modeling 
 4. Build a simple GUI (in our case, using Streamlit)
 
 Check it out: [COVID-19 Archive Prototype](https://covid19-prototype.history-lab.org/)
@@ -227,8 +235,8 @@ Examples:
       * [CapOne DataProfiler](https://github.com/capitalone/DataProfiler),
       * [CommonRegex Improved (crim)](https://github.com/brootware/commonregex-improved)
    * redact: [PyMuPDF](https://github.com/pymupdf/PyMuPDF)
-* Tend to work pretty well on the more basic elements
-* We'll continue to look to improve
+* Works well especially on the simpler elements
+* Not perfect, so we'll continue to look to improve
 
 ---
 
